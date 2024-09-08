@@ -1,0 +1,118 @@
+body {
+    overflow-anchor: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+@keyframes taille{
+    from{
+        opacity: 0%;transform: scale(0)
+    }
+    to{
+        opacity: 100%;transform: scale(1);
+    }
+}
+
+.background{
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    animation: image forwards;animation-delay: 2s;
+}
+
+@keyframes image{
+    to{
+        background-image: url("flower.jpg");/* Photo de Lisa Fotios: https://www.pexels.com/fr-fr/photo/photographie-couleur-selective-de-fleur-petale-rose-1182338/ */
+    }
+}
+
+.llogo{
+    width: 30px;height: 30px;
+    margin: 1em;padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 21px;
+}
+
+.bbox{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: large;
+}
+
+.bbox_row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 250px;
+    background-color: #BFBFBF;
+    border-radius: 21px;
+    margin: 10px;padding-top: 21px;padding-bottom: 21px;
+    animation: taille 2s;animation-timing-function: cubic-bezier(.62,.16,.13,1.01);
+}
+
+.box_row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 300px;
+    background-color: #BFBFBF;
+    border-radius: 21px;
+    margin: 10px;padding-top: 21px;padding-bottom: 21px;
+    animation: taille 2s;animation-timing-function: cubic-bezier(.62,.16,.13,1.01);
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    background-color: #BFBFBF;
+    border-radius: 21px;
+    margin: 10px;padding-top: 21px;padding-bottom: 21px;
+    animation: taille 2s;animation-timing-function: cubic-bezier(.62,.16,.13,1.01);
+}
+
+.img{
+    width: 280px;
+    border-radius: 5px;
+}
+
+.image{
+    border-radius: 5px;
+}
+
+.link{
+    margin: 1em;padding: 10px;
+    border-radius: 21px;
+    background-color: #bfbfbf;
+    box-shadow: -5px -5px 15px #ffffff,5px 5px 15px #00000085;
+    text-decoration: none;
+    &:hover{
+        transition: all .2s ease-in-out;
+        box-shadow: -3px -3px 9px #ffffff,3px 3px 9px #00000085;
+    }
+    &:not(hover){
+        transition: all .2s ease-in-out;
+        box-shadow: -5px -5px 15px #ffffff,5px 5px 15px #00000085;
+    }
+}
+
+.center{
+    text-align: center;
+}
+
