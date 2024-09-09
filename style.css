@@ -1,0 +1,380 @@
+body{
+    overflow-anchor: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.morpion_terminal_background{
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    animation: morpion_terminal_background forwards;animation-delay: 2s;
+}
+@keyframes morpion_terminal_background{
+    to{
+        background-image: url("Projects/Morpion-Terminal/orange_mountain.jpg");/* Photo de Yannick B: https://www.pexels.com/fr-fr/photo/aube-paysage-nature-ciel-19229486/ */
+    }
+}
+
+.projects_background{
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    animation: projects_background forwards;animation-delay: 2s;
+}
+@keyframes projects_background{
+    to{
+        background-image: url("Projects/ocean.jpg");/* Photo de Nicole Avagliano: https://www.pexels.com/fr-fr/photo/vagues-de-l-ocean-2236713/ */
+    }
+}
+
+.home_background{
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    animation: home_background forwards;animation-delay: 2s;
+}
+@keyframes home_background{
+    to{
+        background-image: url("forest.jpg");/* Photo de Matthew Montrone: https://www.pexels.com/fr-fr/photo/photo-d-arbres-et-de-montagne-1324803/ */
+    }
+}
+
+.morpion_background{
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    animation: morpion_background forwards;animation-delay: 2s;
+}
+@keyframes morpion_background{
+    to{
+        background-image: url("Projects/Morpion/morpion_background.jpg");/* Photo de Drift Shutterbug: https://www.pexels.com/fr-fr/photo/vue-panoramique-sur-la-montagne-en-soiree-2085998/ */
+    }
+}
+
+.Liste-creator_background{
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    animation: Liste-creator_background forwards;animation-delay: 2s;
+}
+@keyframes Liste-creator_background{
+    to{
+        background-image: url("Projects/Liste-creator/flower.jpg");/* Photo de Lisa Fotios: https://www.pexels.com/fr-fr/photo/photographie-couleur-selective-de-fleur-petale-rose-1182338/ */
+    }
+}
+
+
+.pprofil{
+    background-color: #BFBFBF;
+    border-radius: 21px;
+    margin: 10px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: taille 2s;animation-timing-function: cubic-bezier(.62,.16,.13,1.01);
+}
+
+.profil{
+    padding: 5px;margin: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profil-photo{
+    margin: 21px;
+    height: 30%;width: 30%;
+    border-radius: 100%;border: rgb(143, 0, 0) 0.5em solid;
+    background-position: center;
+    border-radius: 100%;
+    box-shadow: -5px -5px 15px #ffffff,5px 5px 15px #00000085;
+    animation: taille 2s;animation-delay: 1s;animation-timing-function: cubic-bezier(.62,.16,.13,1.01);animation-fill-mode: backwards;
+}
+
+.guguss31{
+    padding: 21px;
+    font-size: x-large;
+    border-radius: 100px;
+    box-shadow: -5px -5px 15px #ffffff,5px 5px 15px #00000085;
+    animation: taille 2s;animation-delay: 1.5s;animation-timing-function: cubic-bezier(.62,.16,.13,1.01);animation-fill-mode: backwards;
+}
+
+@keyframes taille{
+    from{
+        opacity: 0%;transform: scale(0)
+    }
+    to{
+        opacity: 100%;transform: scale(1);
+    }
+}
+
+.bar{
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    width: 30px;height: 30px;
+    margin: 1em;padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 21px;
+    background-color: #bfbfbf;
+    box-shadow: -5px -5px 15px #ffffff,5px 5px 15px #00000085;
+    &:hover{
+        transition: all .2s ease-in-out;
+        box-shadow: -3px -3px 9px #ffffff,3px 3px 9px #00000085;
+    }
+    &:not(hover){
+        transition: all .2s ease-in-out;
+        box-shadow: -5px -5px 15px #ffffff,5px 5px 15px #00000085;
+    }
+}
+
+.github{
+    animation: taille 2s;animation-delay: 2s;animation-timing-function: cubic-bezier(.62,.16,.13,1.01);animation-fill-mode: backwards;
+}
+.mail{
+    animation: taille 2s;animation-delay: 2.25s;animation-timing-function: cubic-bezier(.62,.16,.13,1.01);animation-fill-mode: backwards;
+}
+.wikipédia{
+    animation: taille 2s;animation-delay: 2.5s;animation-timing-function: cubic-bezier(.62,.16,.13,1.01);animation-fill-mode: backwards;
+}
+.python{
+    animation: taille 2s;animation-delay: 2.75s;animation-timing-function: cubic-bezier(.62,.16,.13,1.01);animation-fill-mode: backwards;
+}
+.html{
+    animation: taille 2s;animation-delay: 3s;animation-timing-function: cubic-bezier(.62,.16,.13,1.01);animation-fill-mode: backwards;
+}
+.css{
+    animation: taille 2s;animation-delay: 3.25s;animation-timing-function: cubic-bezier(.62,.16,.13,1.01);animation-fill-mode: backwards;
+}
+
+.ccode_languages{
+    background-color: #BFBFBF;
+    border-radius: 21px;
+    margin: 10px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    animation: taille 2s;animation-timing-function: cubic-bezier(.62,.16,.13,1.01);
+}
+
+.projects{
+    height: 400px;width: 300px;
+    background-color: #BFBFBF;
+    border-radius: 21px;
+    margin: 10px;padding-top: 21px;padding-bottom: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    animation: taille 2s;animation-timing-function: cubic-bezier(.62,.16,.13,1.01);
+}
+
+.llink{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;color: black;
+    padding: 21px;
+    font-size: x-large;
+    border-radius: 100px;
+    box-shadow: -5px -5px 15px #ffffff,5px 5px 15px #00000085;
+    width: 200px;height: 50px;
+    animation: taille 2s;animation-delay: 3.5s;animation-timing-function: cubic-bezier(.62,.16,.13,1.01);animation-fill-mode: backwards;
+}
+
+.mmorpion{
+    margin: 10px;padding: 21px;
+    width: 200px;height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-style: solid;border-color: #00000000;border-width: 0.5em;
+    margin: 1em;padding: 10px;
+    border-radius: 21px;
+    &:hover{
+        transition: all 1s;
+        border-color: #048500;
+    }
+    &:not(hover){
+        transition: all 0.5s;
+        border-color: #04850000;
+    }
+}
+
+.morpion{
+    padding: 0px;margin: 0px;
+    width: 180px;height: 180px;
+    border-radius: 21px;
+    animation: taille 2s;animation-delay: 3.75s;animation-timing-function: cubic-bezier(.62,.16,.13,1.01);animation-fill-mode: backwards;
+}
+
+.morpion_text{
+    padding: 0px;margin: 0px;
+    color: black;font-size: x-large;
+    animation: taille 2s;animation-delay: 4s;animation-timing-function: cubic-bezier(.62,.16,.13,1.01);animation-fill-mode: backwards;
+}
+
+.link{
+    margin: 1em;padding: 10px;
+    border-radius: 21px;
+    background-color: #bfbfbf;
+    box-shadow: -5px -5px 15px #ffffff,5px 5px 15px #00000085;
+    text-decoration: none;
+    &:hover{
+        transition: all .2s ease-in-out;
+        box-shadow: -3px -3px 9px #ffffff,3px 3px 9px #00000085;
+    }
+    &:not(hover){
+        transition: all .2s ease-in-out;
+        box-shadow: -5px -5px 15px #ffffff,5px 5px 15px #00000085;
+    }
+}
+
+.pprojects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mmy_projects{
+    margin: 10px;padding: 21px;
+    width: 200px;height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-style: solid;border-color: #00000000;border-width: 0.5em;
+    margin: 1em;padding: 10px;
+    border-radius: 21px;
+    &:hover{
+        transition: all 1s;
+        border-color: #048500;
+    }
+    &:not(hover){
+        transition: all 0.5s;
+        border-color: #04850000;
+    }
+}
+
+.my_projects{
+    padding: 0px;margin: 0px;
+    width: 180px;height: 180px;
+    border-radius: 21px;
+    animation: taille 2s;animation-delay: 1s;animation-timing-function: cubic-bezier(.62,.16,.13,1.01);animation-fill-mode: backwards;
+}
+
+.h1{
+    font-size: xx-large;
+}
+
+.my_projects_text{
+    text-align: center;
+    padding: 0px;margin: 0px;
+    color: black;font-size: x-large;
+    animation: taille 2s;animation-delay: 1.25s;animation-timing-function: cubic-bezier(.62,.16,.13,1.01);animation-fill-mode: backwards;
+}
+
+.llogo{
+    width: 30px;height: 30px;
+    margin: 1em;padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 21px;
+}
+
+.bbox{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: large;
+}
+
+.bbox_row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 5cm;
+    background-color: #BFBFBF;
+    border-radius: 21px;
+    margin: 10px;padding-top: 0.5cm;padding-bottom: 0.5cm;
+    animation: taille 2s;animation-timing-function: cubic-bezier(.62,.16,.13,1.01);
+}
+
+.box_row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 7cm;
+    background-color: #BFBFBF;
+    border-radius: 21px;
+    margin: 10px;padding-top: 0.5cm;padding-bottom: 0.5cm;
+    animation: taille 2s;animation-timing-function: cubic-bezier(.62,.16,.13,1.01);
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 7cm;
+    background-color: #BFBFBF;
+    border-radius: 21px;
+    margin: 0.5cm;padding-top: 0.5cm;padding-bottom: 0.5cm;
+    animation: taille 2s;animation-timing-function: cubic-bezier(.62,.16,.13,1.01);
+}
+
+.img{
+    width: 6.5cm;
+    border-radius: 5px;
+}
+
+.image{
+    border-radius: 5px;
+}
+
+.center{
+    text-align: center;
+}
+
