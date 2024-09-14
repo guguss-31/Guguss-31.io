@@ -29,6 +29,9 @@
         max-width: 21vw;
         max-height: 21vh;
     }
+    .morpion{
+        width: 90%;
+    }
 }
 
 @media (orientation: landscape) {
